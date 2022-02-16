@@ -1,0 +1,47 @@
+nav {
+    background-color: #4765e6;
+    border-radius: 30px;
+    li {
+        padding: 0 5px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: lightgray;
+            transition: all 0.2s ease 0s;
+        }
+    }
+}
+
+main {
+    div {
+        h1 {
+            color: #172449;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+    }
+    section {
+        color: #172449;
+    }
+}
+
+footer {
+    background: linear-gradient(to bottom, #4765e6, #172449);
+    color: white;
+    button {
+        padding: 9px 25px;
+        margin-left: 5px;
+        background-color: #4765e6;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+      }
+      button:hover {
+        background-color: orange;
+      }
+}

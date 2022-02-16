@@ -1,0 +1,76 @@
+// VARIABLE MARGIN 
+
+$margin: 15px 30px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    margin: $margin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin: $margin;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        ul {
+            text-decoration: none;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+main {
+    margin: $margin;
+    div {
+        h1 {
+            margin: 15px 0;
+            text-align: center;
+        }
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0px;
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 200px;
+            }
+        }
+    } 
+}
+
+footer {
+    margin-top: 20px;
+    div {
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}

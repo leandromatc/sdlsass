@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* Este sería un comentario en CSS PURO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin: 15px 30px;
+}
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+nav div ul {
+  text-decoration: none;
+}
+nav div ul li {
+  display: inline-block;
+}
+
+main {
+  margin: 15px 30px;
+}
+main div h1 {
+  margin: 15px 0;
+  text-align: center;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+main section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section article img {
+  width: 200px;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer div {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+nav {
+  background-color: #4765e6;
+  border-radius: 30px;
+}
+nav li {
+  padding: 0 5px;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover {
+  color: lightgray;
+  transition: all 0.2s ease 0s;
+}
+
+main div h1 {
+  color: #172449;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+}
+main section {
+  color: #172449;
+}
+
+footer {
+  background: linear-gradient(to bottom, #4765e6, #172449);
+  color: white;
+}
+footer button {
+  padding: 9px 25px;
+  margin-left: 5px;
+  background-color: #4765e6;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+footer button:hover {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=destino.css.map */
