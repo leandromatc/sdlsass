@@ -1,8 +1,4 @@
-// VARIABLE MARGIN 
-
-$margin: 15px 30px;
-
-
+@import "variables";
 * {
     margin: 0;
     padding: 0;
@@ -14,20 +10,27 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+//mapa
+@each $nombre,
+$margen in $margenes {
+    #{$nombre} {
+        margin: $margen;
+    }
+}
+
 header {
-    margin: $margin;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include altypad(150px, 5px)
 }
 
 nav {
-    margin: $margin;
     div {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50px;
+        @include altypad(50px, 10px);
         ul {
             text-decoration: none;
             li {
@@ -38,9 +41,8 @@ nav {
 }
 
 main {
-    margin: $margin;
     div {
-        h1 {
+        .titulo {
             margin: 15px 0;
             text-align: center;
         }
@@ -58,11 +60,14 @@ main {
                 width: 200px;
             }
         }
-    } 
+    }
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
     div {
         margin-top: 20px;
         padding: 10px;

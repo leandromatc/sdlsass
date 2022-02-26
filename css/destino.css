@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* Este sería un comentario en CSS PURO */
+/* COLORES */
+/* MAPAS */
+/* COLORES */
+/* MAPAS */
 * {
   margin: 0;
   padding: 0;
@@ -12,20 +16,35 @@ body {
 }
 
 header {
-  margin: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 20px 30px;
 }
 
 nav {
   margin: 15px 30px;
 }
+
+main {
+  margin: 10px 30px;
+}
+
+footer {
+  margin: 0 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 5px;
+}
+
 nav div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
+  padding: 10px;
 }
 nav div ul {
   text-decoration: none;
@@ -34,10 +53,7 @@ nav div ul li {
   display: inline-block;
 }
 
-main {
-  margin: 15px 30px;
-}
-main div h1 {
+main div .titulo, main div section .subtitulo, main section div .subtitulo {
   margin: 15px 0;
   text-align: center;
 }
@@ -57,7 +73,10 @@ main section article img {
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 50px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 footer div {
   margin-top: 20px;
@@ -70,8 +89,10 @@ footer p {
   padding-bottom: 10px;
 }
 
+/* COLORES */
+/* MAPAS */
 nav {
-  background-color: #4765e6;
+  background-color: #4765E6;
   border-radius: 30px;
 }
 nav li {
@@ -86,14 +107,15 @@ nav li a:hover {
   transition: all 0.2s ease 0s;
 }
 
-main div h1 {
-  color: #172449;
+main div .titulo, main div section .subtitulo, main section div .subtitulo {
   text-align: center;
   font-size: xx-large;
   font-weight: 700;
-}
-main section {
   color: #172449;
+}
+main section .subtitulo {
+  font-size: large;
+  padding: 10px 10px;
 }
 
 footer {
@@ -103,7 +125,7 @@ footer {
 footer button {
   padding: 9px 25px;
   margin-left: 5px;
-  background-color: #4765e6;
+  background-color: #4765E6;
   color: white;
   border: none;
   border-radius: 50px;
@@ -111,7 +133,7 @@ footer button {
   transition: all 0.5s ease 0s;
 }
 footer button:hover {
-  background-color: orange;
+  background-color: #E68453;
 }
 
 /*# sourceMappingURL=destino.css.map */

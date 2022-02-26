@@ -1,5 +1,6 @@
+@import "variables";
 nav {
-    background-color: #4765e6;
+    background-color: $azulclaro;
     border-radius: 30px;
     li {
         padding: 0 5px;
@@ -16,15 +17,19 @@ nav {
 
 main {
     div {
-        h1 {
-            color: #172449;
+        .titulo {
             text-align: center;
             font-size: xx-large;
             font-weight: 700;
+            color: $azuloscuro;
         }
     }
     section {
-        color: #172449;
+        .subtitulo {
+            @extend .titulo;
+            font-size: large;
+            padding: 10px 10px;
+        }
     }
 }
 
@@ -34,14 +39,14 @@ footer {
     button {
         padding: 9px 25px;
         margin-left: 5px;
-        background-color: #4765e6;
+        background-color: $azulclaro;
         color: white;
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.5s ease 0s;
-      }
-      button:hover {
-        background-color: orange;
-      }
+    }
+    button:hover {
+        background-color: $naranja;
+    }
 }
