@@ -1,0 +1,13 @@
+/* COLORES */
+
+$azuloscuro: #172449;
+$azulclaro: #4765E6;
+$naranja: #E68453;
+
+/* MAPAS */
+
+$margenes: ( header: 20px 30px, nav: 15px 30px, main: 10px 30px, footer: 0 0);
+@mixin altypad($altura, $pad) {
+    height: $altura;
+    padding: $pad;
+}
